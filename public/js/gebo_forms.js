@@ -1,49 +1,9 @@
 /* [ ---- Gebo Admin Panel - extended form elements ---- ] */
 
 	$(document).ready(function() {
-		//* masked inputs
-		gebo_mask_input.init();
-		//* datepicker
-		gebo_datepicker.init();
-		//* timepicker
-		gebo_timepicker.init();
-		//* words, characters limit for textarea
-		gebo_limiter.init();
-		//* autosize for textareas
-		gebo_auto_expand.init();
-        //* tag handler for inputs
-		gebo_tag_handler.init();
-        //* input spinners
-		gebo_spinners.init();
-		//* nice form elements
-        gebo_uniform.init();
-		//* jQuery UI sliders
-		gebo_sliders.init();
-		//* animated jQuery UI progressbars
-		gebo_progressbars.init();
-		//* 2col multiselect
-		gebo_multiselect.init();
-		//* enhanced select
+
 		gebo_chosen.init();
-		//* WYSIWG editor
-        gebo_wysiwg.init();
-        //* multiupload
-        gebo_multiupload.init();
-		//* colorpicker
-		gebo_colorpicker.init();
-		
-		$('.open_modal_form').click(function(e) {
-			$.colorbox({
-				href: '#modal_form',
-				inline: true,
-				opacity: '0.2',
-				fixed: true,
-				scrolling: false
-			});
-			e.preventDefault();
-		})
-		
-		//* password strength checker
+	
 		gebo_pass_check.init();
 		
 	});

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Tarifas extends Model{
 	protected $table='tarifas';
   protected $fillable = [
-		'id','nombre_tarifa','tipo_tarifa','precio'
+		'nombre_tarifa','tipo_tarifa','precio'
   ];
   public function clinicas(){
     return $this->hasMany('App\Clinica');

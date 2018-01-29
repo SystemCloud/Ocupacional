@@ -9,4 +9,5 @@ Route::get('/miPirfel.changePassword','PerfilController@password');
 Route::put('/perfil.update','PerfilController@update');
 
 //RUTAS PARA CLINICAS
-Route::resource('/clinicas','ClinicasController');
+Route::resource('/clinicas','super\ClinicasController');
+Route::resource('/tarifas','super\TarifasController');

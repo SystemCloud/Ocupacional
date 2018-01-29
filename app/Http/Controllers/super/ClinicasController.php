@@ -1,9 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\super;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Clinicas;
+use App\Tarifas;
+
 use Auth;
 
 class ClinicasController extends Controller{
@@ -11,16 +14,23 @@ class ClinicasController extends Controller{
 		$this->middleware('auth');
 	//	$this->middleware('super');
 	}
-  public function index(){
-		$clinicas=Clinicas::paginate(1);
+  public function index(){ 
+		$clinicas=Clinicas::paginate(10);
 		return view('super.clinicas.index')
 		->with('clinicas',$clinicas);
   }
   public function create(){
-		return view('super.clinicas.create');
+    $tarifas = Tarifas::all();
+		return view('super.clinicas.create')
+    ->with('tarifas',$tarifas);
   }
   public function store(Request $request){
-
+    if($request->ajax()){
+            Clinicas::create($request->all());
+            return response()->json([
+                "mensaje" => "creado"
+            ]);
+        }
   }
   public function show($id){
 

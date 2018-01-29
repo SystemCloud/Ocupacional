@@ -32,7 +32,7 @@
 			<li class="dropdown">
 				<a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-th icon-white"></i> TARIFAS <b class="caret"></b></a>
 				<ul class="dropdown-menu">
-					<li><a href="alerts_btns.html">Alerts & Buttons</a></li>
+					<li><a onclick="cargar_layout('tarifas')">Mantenimiento de Tarifas</a></li>
 				</ul>
 			</li>
 			<li class="dropdown">

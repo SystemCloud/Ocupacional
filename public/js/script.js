@@ -10,7 +10,7 @@ function edit_form(ruta){
 	if(codigo==''){
 		notification('Para editar un registro, primero debes seleccionar uno de la tabla.','warning','2000');
 	}
-	$.get(ruta+'/'+codigo+'/edit',function(data){
+	$.get(ruta+'/'+codigo+'/edit',function(data){ 
 		$('.preload_layout').hide();
 		$('#contenedor').html(data);
 	})
@@ -126,4 +126,9 @@ function notification(texto,tipo,time){
 		 }
 	}).show();
 
+}
+function llamar_chosen(selector){
+	$(selector).chosen({
+		allow_single_deselect: true
+	});
 }

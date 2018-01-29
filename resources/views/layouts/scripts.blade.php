@@ -19,3 +19,5 @@
 <script src="lib/sticky/sticky.min.js"></script>
 <script src="js/noty.js" type="text/javascript"></script>
 <script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+<script src="lib/chosen/chosen.jquery.min.js"></script>
+

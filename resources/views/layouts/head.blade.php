@@ -14,4 +14,5 @@
 <link rel="stylesheet" href="lib/sticky/sticky.css" />
 <link href="css/noty.css" rel="stylesheet">
 <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="lib/chosen/chosen.css" />
 <link rel="stylesheet" href="css/style.css" />
